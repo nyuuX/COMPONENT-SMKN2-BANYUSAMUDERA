@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/fe4561a24f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <style>
+
+   
+    input:checked ~ .dot {
+    transform: translateX(200%);
+    }
+    </style>
+</head>
+<body class="font-poppins bg-light bg-cover bg-no-repeat">
+    <div class="h-full w-full p-20 flex flex-col gap-8">
+        <div class="flex justify-center p-4 gap-7 bg-slate-100 border shadow-lg rounded-lg">
+            <h1 class="text-2xl">Design</h1>
+        </div>
+        <!--Navbar-->
+        <div class="flex flex-col p-8 gap-7 bg-slate-100 border shadow-lg rounded-lg">
+            <h1 class="text-2xl">Navigation</h1>
+            <!--Nav1-->
+            <div class="flex w-full h-auto justify-between px-6 py-3 border bg-white rounded-xl shadow-md">
+                <div class="flex gap-4 w-1/3">
+                    <div class="my-auto"><span class="text-xl">Uby</span><span class="font-semibold text-xl text-blue-600">X</span></div>
+                </div>
+                <div class="my-auto w-1/3 flex justify-center border-b px-2">
+                    <i class="fa-solid fa-magnifying-glass my-auto"></i><input type="text" placeholder="Search" class="px-2 outline-none w-full">
+                </div>
+                <div class="flex justify-end gap-4 w-1/3">
+                    <button class="h-10 w-10 border rounded-full border-black hover:bg-[#131C21] hover:text-white transition"><i class="fa-regular fa-envelope"></i></button>
+                    <button class="h-10 w-10 border rounded-full border-black hover:bg-[#131C21] hover:text-white transition"><span><i class="fa-regular fa-bell"></i></span></button>
+                    <div class=""><img src="../src/assets/profile.jpg" alt="" class="h-10 w-10 rounded-full"></div>
+                </div>
+            </div>
+            <!--Nav2-->
+            <div class="flex w-full h-auto justify-between px-6 py-4 border bg-white rounded-xl shadow-md">
+                <div class="flex gap-4 w-1/3">
+                    <div class="my-auto"><span class="text-xl">Uby</span><span class="font-semibold text-xl text-blue-600">X</span></div>
+                </div>
+                <div class="my-auto w-1/3 flex justify-center">
+                    <ul class="flex gap-8">
+                        <li><a href="" class="hover:text-blue-400 transition">Home</a> </li>
+                        <li><a href="" class="hover:text-blue-400 transition">Features</a> </li>
+                        <li><a href="" class="hover:text-blue-400 transition">About</a> </li>
+                        <li><a href="" class="hover:text-blue-400 transition">Blog</a> </li>
+                        <li><a href="" class="hover:text-blue-400 transition">Contact Us</a> </li>
+                    </ul>
+                </div>
+                <div class="flex justify-end w-1/3 gap-4">
+                    <a href="">Sign In</a>
+                    <a href="" class="border rounded-full px-4 border-black hover:bg-[#131C21] hover:text-white transition">Sign Out</a>
+                </div>
+            </div>
+            <!--Nav3-->
+            <div class="flex w-full h-auto px-6 py-4 border bg-white rounded-xl shadow-md justify-between">
+                <div class="flex w-1/3 gap-12">
+                    <div class="flex">
+                        <div class="my-auto"><span class="text-xl">Uby</span><span class="font-semibold text-xl text-blue-600">X</span></div>
+                    </div>
+                    <div class="my-auto flex justify-center border rounded-full px-2 w-1/2">
+                        <i class="fa-solid fa-magnifying-glass my-auto"></i><input type="text" placeholder="Search" class="px-2 outline-none w-full">
+                    </div>
+                </div>
+                <div class="flex justify-end w-2/3 gap-24">
+                    <ul class="flex gap-8 my-auto">
+                        <li><a href="" class="hover:text-blue-400 transition">Home</a> </li>
+                        <li><a href="" class="hover:text-blue-400 transition">Features</a> </li>
+                        <li><a href="" class="hover:text-blue-400 transition">About</a> </li>
+                        <li><a href="" class="hover:text-blue-400 transition">Blog</a> </li>
+                        <li><a href="" class="hover:text-blue-400 transition">Contact Us</a> </li>
+                    </ul>
+                    <div class="">
+                        |
+                    </div>
+                    <div class="flex justify-end gap-4">
+                        <a href="" class="my-auto">Sign In</a>
+                        <a href="" class="border rounded-full px-4 border-black hover:bg-[#131C21] hover:text-white transition">Create an Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Button-->
+        <div class="flex flex-col p-8 gap-7 bg-slate-100 border shadow-lg rounded-lg">
+            <h1 class="text-2xl">Button</h1>
+            <div class="flex gap-11">                
+                <!--1-->
+                <div class="flex">
+                    <label for="toggleB" class="flex items-center cursor-pointer">
+                      <!-- toggle -->
+                      <div class="relative">
+                        <!-- input -->
+                        <input type="checkbox" id="toggleB" class="sr-only">
+                        <!-- line -->
+                        <div class="line block bg-blue-600 w-20 h-8 rounded-full"></div>
+                        <!-- dot -->
+                        <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                      </div>
+                    </label>     
+                  </div>
+                <!--2-->
+                <div class="">
+                    <button class="border px-4 py-2 flex gap-2 bg-blue-600 text-white rounded-full transition-all hover:bg-white hover:text-blue-600">Button<div class="border px-2 bg-white text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-all"><i class="fa-regular fa-bell"></i></div></button>
+                </div>
+                <!--3-->
+                  <div class="flex">
+                    <button class="bg-blue-600 px-4 rounded-full flex gap-2 text-white my-auto py-2 transition-all duration-200 hover:px-20 hover:gap-2">Search<span class="my-auto text-white "><i class="fa-solid fa-magnifying-glass"></i></span></button>
+                </div>
+            </div>
+        </div>
+        <!--card-->
+        <div class="flex flex-col p-8 gap-7 bg-slate-100 border shadow-lg rounded-lg">
+            <h1 class="text-2xl">Card</h1>
+            <div class="flex w-full gap-2 justify-between">
+                <!--1-->
+                <div class=" bg-gray-100 flex w-1/3 justify-center">   
+                    <div class="w-full p-6 bg-white rounded-xl shadow-md transition-all transform duration-500">
+                        <img class="w-full object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                        <div class="mt-4">
+                            <h1 class="text-2xl font-bold text-gray-700">Zebra succulent</h1>
+                            <p class="text-sm mt-2 text-gray-700">Two sizes</p>
+                            <div class="mt-4 mb-2 flex justify-between pl-4 pr-2">
+                            <button class="block text-xl font-semibold text-gray-700 cursor-auto">$12.99</button>
+                            <button class="text-lg block font-semibold py-2 px-6 text-green-100 hover:text-white bg-green-400 rounded-lg shadow hover:shadow-md transition duration-300">Buy</button>
+                            </div>
+                        </div>
+                    </div>               
+                </div>   
+                <!--2-->
+                <div class="flex flex-col shadow-md bg-white divide-y rounded-lg flex-none w-ful  w-1/3">
+                    <div class="flex flex-col space-y-2 divide-y">
+                        <!-- Item -->
+                        <div class="flex justify-between space-x-6 items-center p-6">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://flowbite.com/docs/images/people/profile-picture-1.jpg" class="rounded-full h-14 w-14" alt="">
+                                <div class="flex flex-col space-y-2">
+                                    <span>Lorem, ipsum.</span>
+                                    <span>@Loremipsum</span>
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <button class="border rounded-md px-4 py-2">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Item -->
+            
+                        <!-- Item -->
+                        <div class="flex justify-between space-x-6 items-center p-6">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" class="rounded-full h-14 w-14" alt="">
+                                <div class="flex flex-col space-y-2">
+                                    <span>Lorem, ipsum.</span>
+                                    <span>@Loremipsum</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="border rounded-md px-4 py-2">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Item -->
+            
+                        <!-- Item -->
+                        <div class="flex justify-between space-x-6 items-center p-6">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" class="rounded-full h-14 w-14" alt="">
+                                <div class="flex flex-col space-y-2">
+                                    <span>Lorem, ipsum.</span>
+                                    <span>@Loremipsum</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="border rounded-md px-4 py-2">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                    </div>
+                    <div class="h-full flex flex-col justify-end py-8 px-4">
+                        <button class="w-full border p-2 rounded-md hover:opacity-60 transition">View all</button>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="w-1/3 flex flex-col border-gray-300 shadow-md rounded-lg bg-white py-8">
+                    <div class="h-1/3 flex justify-center">
+                        <img src="../src/assets/profile.jpg" alt="" class="h-32 w-32 rounded-full object-cover my-auto">
+                    </div>
+                    <div class="h-2/3 flex justify-center font-light">
+                        <div class="flex flex-col text-center gap-2">
+                            <span>Profile</span>
+                            <span class="text-gray-500">Lorem ipsum dolor sit.</span>
+                            <div class="flex justify-center gap-8 mt-3">
+                                <button class="h-12 w-12 border rounded-full"><i class="fa-brands fa-twitter"></i></button>
+                                <button class="h-12 w-12 border rounded-full"><i class="fa-brands fa-github"></i></button>
+                                <button class="h-12 w-12 border rounded-full"><i class="fa-brands fa-instagram"></i></button>
+                            </div>
+                            <div class="flex justify-between text-center gap-4 mt-10">
+                                <div class="flex flex-col">
+                                    <span><i class="fa-solid fa-heart"></i></span>
+                                    <span class="text-gray-500">13.2k</span>
+                                    <span class="text-gray-500">Likes</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span><i class="fa-solid fa-user-group"></i></span>
+                                    <span class="text-gray-500">8.9k</span>
+                                    <span class="text-gray-500">Followers</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-center h-full">
+                                <div class="h-full flex flex-col justify-end">
+                                    <input type="text" placeholder="Message me :3" class="outline-none border px-4 rounded-lg h-10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--corousel-->
+        <div class="flex flex-col p-8  bg-slate-100 border shadow-lg rounded-lg">
+            <h1 class="text-2xl pb-7">Corousel</h1>
+            <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl rounded-lg">
+                <div class="rounded-full bg-gray-600 text-white absolute top-5 right-5 text-sm px-2 text-center z-10">
+                    <span x-text="currentIndex"></span>/
+                    <span x-text="images.length"></span>
+                </div>
+            
+                <template x-for="(image, index) in images">
+                    <figure class="h-96" x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300"
+                    x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                    x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100"
+                    x-transition:leave-end="opacity-0">
+                    <img :src="image" alt="Image" class="absolute inset-0 z-10 h-full w-full object-cover opacity-70" />
+                    <figcaption class="absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-light text-sm text-center tracking-widest leading-snug bg-white rounded-xl opacity-80">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                    </figcaption>
+                    </figure>
+                </template>
+            
+                <button @click="back()"
+                    class="absolute left-14 top-1/2 -translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
+                    <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                </button>
+            
+                <button @click="next()"
+                class="absolute right-14 top-1/2 translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
+                    <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </article>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('slider', () => ({
+            currentIndex: 1,
+            images: [
+                '../src/assets/profile.jpg',
+                '../src/assets/bg.jpg',
+                '../src/assets/profile.jpg',
+                '../src/assets/gambar.jpeg',
+                '../src/assets/bg.jpg'
+            ],
+            back() {
+                if (this.currentIndex > 1) {
+                    this.currentIndex = this.currentIndex - 1;
+                }
+            },
+            next() {
+                if (this.currentIndex < this.images.length) {
+                    this.currentIndex = this.currentIndex + 1;
+                } else if (this.currentIndex <= this.images.length){
+                    this.currentIndex = this.images.length - this.currentIndex + 1
+                }
+            },
+        }))
+    })
+</script>
+</html>
